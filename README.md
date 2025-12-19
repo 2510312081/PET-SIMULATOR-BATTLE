@@ -4,4 +4,4 @@ Cara instalasi:
 3. Masuk ke folder project: cd PET-SIMULATOR-BATTLE
 4. Install dependencies: npm install
 5. Jalankan: npm start
-6. http://localhost:3001
+6. Buka http://localhost:3001 di web browser
