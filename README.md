@@ -1,6 +1,6 @@
 # Pet Simulator Battle
 
-## ⚙️ Cara Instalasi
+## Cara Instalasi
 1. Pastikan Node.js sudah terinstall  
    Cek dengan:
    ```bash
