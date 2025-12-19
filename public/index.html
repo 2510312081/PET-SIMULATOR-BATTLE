@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Simulator - Node.js</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .pet-bounce { animation: bounce 1s infinite; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-purple-600 via-pink-500 to-red-500 min-h-screen">
+  <div id="app" class="container mx-auto p-4 max-w-6xl">
+    <!-- Header -->
+    <div class="bg-white rounded-xl shadow-2xl p-6 mb-6">
+      <h1 class="text-4xl font-bold text-center mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+        🎮PET SIMULATOR - NODE.JS
+      </h1>
+      <div class="flex justify-center gap-8 text-xl font-bold">
+        <div class="flex items-center gap-2 bg-yellow-100 px-4 py-2 rounded-lg">
+          <span>💰</span>
+          <span class="text-yellow-600" id="coins">0</span>
+          <span class="text-yellow-600">Coins</span>
+        </div>
+        <div class="flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-lg">
+          <span>🐾</span>
+          <span class="text-blue-600" id="petCount">0</span>
+          <span class="text-blue-600">Pets</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="flex gap-4 mb-6">
+      <button onclick="showView('home')" class="flex-1 py-3 px-6 rounded-xl font-bold text-white bg-white bg-opacity-20 hover:bg-opacity-30 transition-all">
+        🏠 My Pets
+      </button>
+      <button onclick="showView('shop')" class="flex-1 py-3 px-6 rounded-xl font-bold text-white bg-white bg-opacity-20 hover:bg-opacity-30 transition-all">
+        🏪 Pet Shop
+      </button>
+      <button onclick="showView('battle')" class="flex-1 py-3 px-6 rounded-xl font-bold text-white bg-white bg-opacity-20 hover:bg-opacity-30 transition-all">
+        ⚔️ Battle Arena
+      </button>
+      <button onclick="resetGame()" class="py-3 px-6 rounded-xl font-bold text-white bg-red-500 hover:bg-red-600 transition-all">
+        🔄 Reset
+      </button>
+    </div>
+
+    <!-- Content Views -->
+    <div id="homeView" class="view"></div>
+    <div id="shopView" class="view hidden"></div>
+    <div id="battleView" class="view hidden"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+*/
